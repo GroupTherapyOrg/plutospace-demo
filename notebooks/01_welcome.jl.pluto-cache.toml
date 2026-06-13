@@ -1,0 +1,85 @@
+cell_order = ["a0000001-0000-4000-8000-000000000001", "a0000002-0000-4000-8000-000000000002", "a0000003-0000-4000-8000-000000000003", "a0000004-0000-4000-8000-000000000004", "a0000005-0000-4000-8000-000000000005", "a0000006-0000-4000-8000-000000000006", "a0000007-0000-4000-8000-000000000007", "a0000008-0000-4000-8000-000000000008", "a0000009-0000-4000-8000-000000000009"]
+format = 1
+julia_version = "v1.12.6"
+pluto_version = "v0.1.0"
+
+[cells.a0000001-0000-4000-8000-000000000001]
+errored = false
+execution_key = "f8494c9be426ba07"
+mime = "text/html"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R52gM5PGRpdiBjbGFzcz0ibWFya2Rvd24iPjxoMSBpZD0i8J+fovCfn6Pwn5S0LVdlbGNvbWUtdG8tUGx1dG9MYW5kIj7wn5+i8J+fo/CflLQgV2VsY29tZSB0byBQbHV0b0xhbmQ8L2gxPgo8aDMgaWQ9IkEtd29ya3NwYWNlLWZvci1QbHV0by1ub3RlYm9va3Mt4oCULWJ1aWx0LWZvci1odW1hbnMtYW5kLWFnZW50cywtdG9nZXRoZXIuIj5BIHdvcmtzcGFjZSBmb3IgUGx1dG8gbm90ZWJvb2tzIOKAlCBidWlsdCBmb3IgaHVtYW5zIGFuZCBhZ2VudHMsIDxlbT50b2dldGhlci48L2VtPjwvaDM+CjxwPllvdSBvcGVuZWQgYSA8c3Ryb25nPmZvbGRlcjwvc3Ryb25nPi4gVGhlIHNpZGViYXIgb24gdGhlIGxlZnQgaXMgaXRzIGZpbGUgdHJlZS4gVGhpcyBub3RlYm9vayBpcyBvbmUgPHN0cm9uZz50YWI8L3N0cm9uZz47IG9wZW4gYW5vdGhlciBmaWxlIGFuZCBpdCBsYW5kcyBiZXNpZGUgdGhpcyBvbmUuIEEgcmVhbCA8c3Ryb25nPnRlcm1pbmFsPC9zdHJvbmc+IGRvY2tzIGJlbG93LiBBbmQgYW55dGhpbmcgdGhhdCBjYW4gZWRpdCBhIGZpbGUg4oCUIDxlbT55b3U8L2VtPiwgb3IgYSBjb2RpbmcgYWdlbnQgaW4gYW55IHRlcm1pbmFsIOKAlCB3b3JrcyBpbiB0aGlzIHNhbWUgbGl2ZSBzZXNzaW9uLjwvcD4KPHA+VGhpcyBpcyB0aGUgdW5tb2RpZmllZCA8YSBocmVmPSJodHRwczovL2dpdGh1Yi5jb20vZm9uc3AvUGx1dG8uamwiPlBsdXRvLmpsPC9hPiBlZGl0b3IuIEV2ZXJ5dGhpbmcgeW91IGtub3cgYWJvdXQgUGx1dG8gc3RpbGwgaG9sZHMuIFBsdXRvTGFuZCBhZGRzIHRoZSA8ZW0+bGFuZCBhcm91bmQ8L2VtPiB0aGUgbm90ZWJvb2tzLjwvcD4KPC9kaXY+sHBlcnNpc3RfanNfc3RhdGXCpG1pbWWpdGV4dC9odG1ssmxhc3RfcnVuX3RpbWVzdGFtcMtB2otvqB/qhbdoYXNfcGx1dG9faG9va19mZWF0dXJlc8Kscm9vdGFzc2lnbmVlwA=="
+result_hash = "7f0a1ad5eeb5776b"
+runtime_ns = 3385583
+text_representation = """<div class=\"markdown\"><h1 id=\"🟢🟣🔴-Welcome-to-PlutoLand\">🟢🟣🔴 Welcome to PlutoLand</h1>\n<h3 id=\"A-workspace-for-Pluto-notebooks-—-built-for-humans-and-agents,-together.\">A workspace for Pluto notebooks — built for humans and agents, <em>together.</em></h3>\n<p>You opened a <strong>folder</strong>. The sidebar on the left is its file tree. This notebook is one <strong>tab</strong>; open another file and it lands beside this one. A real <strong>terminal</strong> docks below. And anything that can edit a file — <em>you</em>, or a coding agent in any terminal — works in this same live session.</p>\n<p>This is the unmodified <a href=\"https://github.com/fonsp/Pluto.jl\">Pluto.jl</a> editor. Everything you know about Pluto still holds. PlutoLand adds the <em>land around</em> the notebooks.</p>\n</div>"""
+
+[cells.a0000002-0000-4000-8000-000000000002]
+errored = false
+execution_key = "5cf2d4af54e10b8b"
+mime = "text/html"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R52eg8ZGl2IGNsYXNzPSJtYXJrZG93biI+PGgyIGlkPSJTdGlsbC1yZWFjdGl2ZSI+U3RpbGwgcmVhY3RpdmU8L2gyPgo8cD5DaGFuZ2UgYSBjZWxsIGFuZCBldmVyeXRoaW5nIGRvd25zdHJlYW0gcmUtcnVucy4gVGhlIGNsYXNzaWMgUGx1dG8gcHJvbWlzZSDigJQgY2hhbmdlIDxjb2RlPnBsYW5ldDwvY29kZT4gYmVsb3cgYW5kIHdhdGNoIHRoZSB0d28gY2VsbHMgdW5kZXIgaXQgdXBkYXRlLjwvcD4KPC9kaXY+sHBlcnNpc3RfanNfc3RhdGXCpG1pbWWpdGV4dC9odG1ssmxhc3RfcnVuX3RpbWVzdGFtcMtB2otvqCguCrdoYXNfcGx1dG9faG9va19mZWF0dXJlc8Kscm9vdGFzc2lnbmVlwA=="
+result_hash = "5f3b72868e1394f5"
+runtime_ns = 313209
+text_representation = """<div class=\"markdown\"><h2 id=\"Still-reactive\">Still reactive</h2>\n<p>Change a cell and everything downstream re-runs. The classic Pluto promise — change <code>planet</code> below and watch the two cells under it update.</p>\n</div>"""
+
+[cells.a0000003-0000-4000-8000-000000000003]
+errored = false
+execution_key = "93b3a38fab5852e5"
+mime = "text/plain"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R5pyJQbHV0byKwcGVyc2lzdF9qc19zdGF0ZcKkbWltZap0ZXh0L3BsYWlusmxhc3RfcnVuX3RpbWVzdGFtcMtB2otvqDMMUrdoYXNfcGx1dG9faG9va19mZWF0dXJlc8Kscm9vdGFzc2lnbmVlpnBsYW5ldA=="
+result_hash = "9e8102bb0aa75b6f"
+runtime_ns = 7667
+text_representation = "\"Pluto\""
+
+[cells.a0000004-0000-4000-8000-000000000004]
+errored = false
+execution_key = "657be4698f5c33f9"
+mime = "text/plain"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R52T0iR3JlZXRpbmdzIGZyb20gUGx1dG8g4oCUIHN0aWxsIGEgcGxhbmV0IGluIG91ciBoZWFydHMuIPCfqpAisHBlcnNpc3RfanNfc3RhdGXCpG1pbWWqdGV4dC9wbGFpbrJsYXN0X3J1bl90aW1lc3RhbXDLQdqLb6g2ttC3aGFzX3BsdXRvX2hvb2tfZmVhdHVyZXPCrHJvb3Rhc3NpZ25lZahncmVldGluZw=="
+result_hash = "721ee7b484edf310"
+runtime_ns = 10958
+text_representation = "\"Greetings from Pluto — still a planet in our hearts. 🪐\""
+
+[cells.a0000005-0000-4000-8000-000000000005]
+errored = false
+execution_key = "fd41581d623d80f2"
+mime = "application/vnd.pluto.tree+object"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R5haZwcmVmaXjZQ0RpY3R7U3RyaW5nLCBATmFtZWRUdXBsZXthdTo6RmxvYXQ2NCwgeWVhcjo6RmxvYXQ2NCwgbW9vbnM6OkludDY0fX2oZWxlbWVudHOTkpKpIk5lcHR1bmUiqnRleHQvcGxhaW6Sg6hlbGVtZW50c5OSomF1kqQzMC4xqnRleHQvcGxhaW6SpHllYXKSpTE2NC44qnRleHQvcGxhaW6SpW1vb25zkqIxNKp0ZXh0L3BsYWlupHR5cGWqTmFtZWRUdXBsZahvYmplY3RpZLBjZDYzNzc1ODg2YTQ0Y2Iy2SFhcHBsaWNhdGlvbi92bmQucGx1dG8udHJlZStvYmplY3SSkqciUGx1dG8iqnRleHQvcGxhaW6Sg6hlbGVtZW50c5OSomF1kqQzOS41qnRleHQvcGxhaW6SpHllYXKSpTI0OC4wqnRleHQvcGxhaW6SpW1vb25zkqE1qnRleHQvcGxhaW6kdHlwZapOYW1lZFR1cGxlqG9iamVjdGlksGY0Y2ViYWY1ZDg5ZmVmNWHZIWFwcGxpY2F0aW9uL3ZuZC5wbHV0by50cmVlK29iamVjdJKSpiJNYXJzIqp0ZXh0L3BsYWlukoOoZWxlbWVudHOTkqJhdZKkMS41Mqp0ZXh0L3BsYWlukqR5ZWFykqQxLjg4qnRleHQvcGxhaW6SpW1vb25zkqEyqnRleHQvcGxhaW6kdHlwZapOYW1lZFR1cGxlqG9iamVjdGlksDU4OTdkYzU2NTJjYjE1ZDXZIWFwcGxpY2F0aW9uL3ZuZC5wbHV0by50cmVlK29iamVjdKR0eXBlpERpY3SscHJlZml4X3Nob3J0pERpY3Sob2JqZWN0aWSwNDhkZmU1NGFmMTQyOThlZbBwZXJzaXN0X2pzX3N0YXRlwqRtaW1l2SFhcHBsaWNhdGlvbi92bmQucGx1dG8udHJlZStvYmplY3SybGFzdF9ydW5fdGltZXN0YW1wy0Hai2+oWYVAt2hhc19wbHV0b19ob29rX2ZlYXR1cmVzwqxyb290YXNzaWduZWWlZmFjdHM="
+result_hash = "fee7f0e9b62857dc"
+runtime_ns = 51374
+text_representation = """Dict{String, @NamedTuple{au::Float64, year::Float64, moons::Int64}} with 3 entries:\n  \"Neptune\" => (au = 30.1, year = 164.8, moons = 14)\n  \"Pluto\"   => (au = 39.5, year = 248.0, moons = 5)\n  \"Mars\"    => (au = 1.52, year = 1.88, moons = 2)"""
+
+[cells.a0000006-0000-4000-8000-000000000006]
+errored = false
+execution_key = "7a2cf900e754452"
+mime = "text/html"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R52gF7PGRpdiBjbGFzcz0ibWFya2Rvd24iPjx0YWJsZT48dHI+PHRoIGFsaWduPSJyaWdodCI+PC90aD48dGggYWxpZ249InJpZ2h0Ij5QbHV0bzwvdGg+PC90cj48dHI+PHRkIGFsaWduPSJyaWdodCI+RGlzdGFuY2UgZnJvbSB0aGUgU3VuPC90ZD48dGQgYWxpZ249InJpZ2h0Ij48c3Ryb25nPjM5LjUgQVU8L3N0cm9uZz48L3RkPjwvdHI+PHRyPjx0ZCBhbGlnbj0icmlnaHQiPk9uZSB5ZWFyPC90ZD48dGQgYWxpZ249InJpZ2h0Ij48c3Ryb25nPjI0OC4wIEVhcnRoIHllYXJzPC9zdHJvbmc+PC90ZD48L3RyPjx0cj48dGQgYWxpZ249InJpZ2h0Ij5Nb29uczwvdGQ+PHRkIGFsaWduPSJyaWdodCI+PHN0cm9uZz41PC9zdHJvbmc+PC90ZD48L3RyPjwvdGFibGU+CjwvZGl2PrBwZXJzaXN0X2pzX3N0YXRlwqRtaW1lqXRleHQvaHRtbLJsYXN0X3J1bl90aW1lc3RhbXDLQdqLb6h2CMy3aGFzX3BsdXRvX2hvb2tfZmVhdHVyZXPCrHJvb3Rhc3NpZ25lZcA="
+result_hash = "a86676530417ec4c"
+runtime_ns = 89126625
+text_representation = """<div class=\"markdown\"><table><tr><th align=\"right\"></th><th align=\"right\">Pluto</th></tr><tr><td align=\"right\">Distance from the Sun</td><td align=\"right\"><strong>39.5 AU</strong></td></tr><tr><td align=\"right\">One year</td><td align=\"right\"><strong>248.0 Earth years</strong></td></tr><tr><td align=\"right\">Moons</td><td align=\"right\"><strong>5</strong></td></tr></table>\n</div>"""
+
+[cells.a0000007-0000-4000-8000-000000000007]
+errored = false
+execution_key = "522fc7b678bc2968"
+mime = "text/html"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R52bI8ZGl2IGNsYXNzPSJtYXJrZG93biI+PGgyIGlkPSJBLWxpdHRsZS1tb3Rpb24iPkEgbGl0dGxlIG1vdGlvbjwvaDI+CjxwPlB1cmUgc3RkbGliIOKAlCBubyBwYWNrYWdlcyBuZWVkZWQuICYjNDA7VGhlIG9yYml0IHRyYWNlcyBhIHNpbmUgd2F2ZSBhY3Jvc3MgYW4gQVNDSUkgZ3JpZC4mIzQxOzwvcD4KPC9kaXY+sHBlcnNpc3RfanNfc3RhdGXCpG1pbWWpdGV4dC9odG1ssmxhc3RfcnVuX3RpbWVzdGFtcMtB2otvqHYpx7doYXNfcGx1dG9faG9va19mZWF0dXJlc8Kscm9vdGFzc2lnbmVlwA=="
+result_hash = "dfcc1a7f81458639"
+runtime_ns = 191000
+text_representation = """<div class=\"markdown\"><h2 id=\"A-little-motion\">A little motion</h2>\n<p>Pure stdlib — no packages needed. &#40;The orbit traces a sine wave across an ASCII grid.&#41;</p>\n</div>"""
+
+[cells.a0000008-0000-4000-8000-000000000008]
+errored = false
+execution_key = "38b6969622ef0d4f"
+mime = "text/plain"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R52gdSwrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt+KXj+KXj+KXj+KXj+KXj+KXj+KXj8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCtwrCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K34peP4peP4pePwrfCt8K3wrfCt8K3wrfil4/il4/il4/Ct8K3wrfCt8K3wrfCt8K3wrcKwrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K34peP4pePwrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfil4/il4/Ct8K3wrfCt8K3wrfCtwrCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K34pePwrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt+KXj8K3wrfCt8K3wrfCtwrCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfil4/il4/Ct8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt+KXj+KXj8K3wrfCt8K3CsK3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfil4/Ct8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K34pePwrfCt8K3CsK3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt+KXj+KXj8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K34peP4pePwrcKwrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt+KXj8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfil48K4peP4pePwrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfil4/il4/Ct8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCtwrCt8K34pePwrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt+KXj8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCtwrCt8K3wrfil4/Ct8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfil4/Ct8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCtwrCt8K3wrfCt+KXj+KXj8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfil4/il4/Ct8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3CsK3wrfCt8K3wrfCt+KXj+KXj8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K34peP4pePwrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrcKwrfCt8K3wrfCt8K3wrfCt+KXj+KXj+KXj8K3wrfCt8K3wrfCt8K34peP4peP4pePwrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3CsK3wrfCt8K3wrfCt8K3wrfCt8K3wrfil4/il4/il4/il4/il4/il4/il4/Ct8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrfCt8K3wrewcGVyc2lzdF9qc19zdGF0ZcKkbWltZap0ZXh0L3BsYWlusmxhc3RfcnVuX3RpbWVzdGFtcMtB2otvqH2v6rdoYXNfcGx1dG9faG9va19mZWF0dXJlc8Kscm9vdGFzc2lnbmVlwA=="
+result_hash = "bcdc2387e75a23bf"
+runtime_ns = 33831708
+text_representation = """·········································●●●●●●●············\n······································●●●·······●●●·········\n····································●●·············●●·······\n···································●·················●······\n·································●●···················●●····\n································●·······················●···\n······························●●·························●●·\n·····························●·····························●\n●●·························●●·······························\n··●·······················●·································\n···●·····················●··································\n····●●·················●●···································\n······●●·············●●·····································\n········●●●·······●●●·······································\n···········●●●●●●●··········································"""
+
+[cells.a0000009-0000-4000-8000-000000000009]
+errored = false
+execution_key = "ffaa53f4afe258f5"
+mime = "text/html"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R52gPrPGRpdiBjbGFzcz0ibWFya2Rvd24iPjxoMiBpZD0iV2hlcmUtdG8tbmV4dCI+V2hlcmUgdG8gbmV4dDwvaDI+Cjx0YWJsZT48dHI+PHRoIGFsaWduPSJyaWdodCI+Tm90ZWJvb2s8L3RoPjx0aCBhbGlnbj0icmlnaHQiPldoYXQgaXQgc2hvd3M8L3RoPjwvdHI+PHRyPjx0ZCBhbGlnbj0icmlnaHQiPjxjb2RlPjAyX3Bsb3RzLmpsPC9jb2RlPjwvdGQ+PHRkIGFsaWduPSJyaWdodCI+SW50ZXJhY3RpdmUgcGxvdHMgd2l0aCA8c3Ryb25nPldhc21NYWtpZTwvc3Ryb25nPiAmIzQzOyBhIDxzdHJvbmc+UGx1dG9VSTwvc3Ryb25nPiBzbGlkZXI8L3RkPjwvdHI+PHRyPjx0ZCBhbGlnbj0icmlnaHQiPjxjb2RlPjAzX2xhenlfYW5kX2NhY2hlLmpsPC9jb2RlPjwvdGQ+PHRkIGFsaWduPSJyaWdodCI+VGhlIDxzdHJvbmc+bGF6eTwvc3Ryb25nPiAyLWZpbGUgbW9kZWw6IHN0YWxlIG1hcmtzLCB0aGUgY2FjaGUgc2lkZWNhciwgcmVzdGFydC1zdXJ2aXZhbDwvdGQ+PC90cj48dHI+PHRkIGFsaWduPSJyaWdodCI+PGNvZGU+MDRfYWdlbnRfY29sbGFiLmpsPC9jb2RlPjwvdGQ+PHRkIGFsaWduPSJyaWdodCI+QSA8c3Ryb25nPmh1bWFuICYjNDM7IGFnZW50PC9zdHJvbmc+IHNlc3Npb24gb3ZlciBwbGFpbiBmaWxlcywgSFRUUCwgYW5kIGEgdGlueSBDTEk8L3RkPjwvdHI+PC90YWJsZT4KPHA+T3BlbiB0aGUgPHN0cm9uZz50ZXJtaW5hbDwvc3Ryb25nPiAmIzQwO3RoZSB0b2dnbGUgaW4gdGhlIGNvcm5lciYjNDE7LCB0cnkgYSA8c3Ryb25nPnBsYWluIGZpbGU8L3N0cm9uZz4gZnJvbSB0aGUgdHJlZSAmIzQwOzxjb2RlPmRhdGEvZmllbGQtbm90ZXMubWQ8L2NvZGU+LCA8Y29kZT5zY3JpcHRzL3NrZXRjaC5qbDwvY29kZT4mIzQxOyDigJQgaXQgb3BlbnMgaW4gaXRzIG93biB0YWIgYW5kIGVkaXRzIHdpdGggdGhlIHNhbWUgQ29kZU1pcnJvci4gU2VlIDxjb2RlPlNDUkVFTlNIT1RTLm1kPC9jb2RlPiBmb3IgdGhlIGZ1bGwgZ3VpZGVkIHRvdXIuIPCfjog8L3A+CjwvZGl2PrBwZXJzaXN0X2pzX3N0YXRlwqRtaW1lqXRleHQvaHRtbLJsYXN0X3J1bl90aW1lc3RhbXDLQdqLb6iEpz+3aGFzX3BsdXRvX2hvb2tfZmVhdHVyZXPCrHJvb3Rhc3NpZ25lZcA="
+result_hash = "f321fce2d151f0d1"
+runtime_ns = 100288458
+text_representation = """<div class=\"markdown\"><h2 id=\"Where-to-next\">Where to next</h2>\n<table><tr><th align=\"right\">Notebook</th><th align=\"right\">What it shows</th></tr><tr><td align=\"right\"><code>02_plots.jl</code></td><td align=\"right\">Interactive plots with <strong>WasmMakie</strong> &#43; a <strong>PlutoUI</strong> slider</td></tr><tr><td align=\"right\"><code>03_lazy_and_cache.jl</code></td><td align=\"right\">The <strong>lazy</strong> 2-file model: stale marks, the cache sidecar, restart-survival</td></tr><tr><td align=\"right\"><code>04_agent_collab.jl</code></td><td align=\"right\">A <strong>human &#43; agent</strong> session over plain files, HTTP, and a tiny CLI</td></tr></table>\n<p>Open the <strong>terminal</strong> &#40;the toggle in the corner&#41;, try a <strong>plain file</strong> from the tree &#40;<code>data/field-notes.md</code>, <code>scripts/sketch.jl</code>&#41; — it opens in its own tab and edits with the same CodeMirror. See <code>SCREENSHOTS.md</code> for the full guided tour. 🎈</p>\n</div>"""

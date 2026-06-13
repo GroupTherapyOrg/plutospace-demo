@@ -1,0 +1,10 @@
+name,distance_au,year_earth_years,moons,is_planet
+Mercury,0.39,0.24,0,true
+Venus,0.72,0.62,0,true
+Earth,1.00,1.00,1,true
+Mars,1.52,1.88,2,true
+Jupiter,5.20,11.86,95,true
+Saturn,9.58,29.46,146,true
+Uranus,19.20,84.01,28,true
+Neptune,30.10,164.80,16,true
+Pluto,39.50,248.00,5,false

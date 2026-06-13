@@ -1,0 +1,94 @@
+cell_order = ["c0000001-0000-4000-8000-000000000001", "c0000002-0000-4000-8000-000000000002", "c0000003-0000-4000-8000-000000000003", "c0000004-0000-4000-8000-000000000004", "c0000005-0000-4000-8000-000000000005", "c0000006-0000-4000-8000-000000000006", "c0000007-0000-4000-8000-000000000007", "c0000008-0000-4000-8000-000000000008", "c0000009-0000-4000-8000-000000000009", "c000000a-0000-4000-8000-00000000000a"]
+format = 1
+julia_version = "v1.12.6"
+pluto_version = "v0.1.0"
+
+[cells.c0000001-0000-4000-8000-000000000001]
+errored = false
+execution_key = "2a4d05eb823f8bf1"
+mime = "text/html"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R52gQlPGRpdiBjbGFzcz0ibWFya2Rvd24iPjxoMSBpZD0i8J+foS1MYXp5LW1vZGU6LXRoZS10d28tZmlsZS1yZWFjdGl2ZS1tb2RlbCI+8J+foSBMYXp5IG1vZGU6IHRoZSB0d28tZmlsZSByZWFjdGl2ZSBtb2RlbDwvaDE+CjxwPlBsdXRvTGFuZCYjMzk7cyBkZWZhdWx0IGlzIDxzdHJvbmc+bGF6eTwvc3Ryb25nPi4gRWRpdGluZyBhIGNlbGwg4oCUIGluIHRoZSBicm93c2VyIDxlbT5vcjwvZW0+IG9uIGRpc2sg4oCUIG1hcmtzIGl0ICYjNDA7YW5kIGV2ZXJ5dGhpbmcgZG93bnN0cmVhbSYjNDE7IDxzdHJvbmc+c3RhbGU8L3N0cm9uZz4gaW5zdGVhZCBvZiBydW5uaW5nIGl0LiA8ZW0+WW91PC9lbT4gZGVjaWRlIHdoZW4gdG8gcnVuLCBhbmQgYSBydW4gZXhlY3V0ZXMgZXhhY3RseSB0aGUgc3RhbGUgY2xvc3VyZSBhbmQgbm90aGluZyBtb3JlLjwvcD4KPHA+VHdvIGZpbGVzIGhvbGQgdGhlIHdob2xlIHN0b3J5OjwvcD4KPG9sPgo8bGk+PHA+PHN0cm9uZz48Y29kZT4wM19sYXp5X2FuZF9jYWNoZS5qbDwvY29kZT48L3N0cm9uZz4g4oCUIHRoZSBub3RlYm9vayAmIzQwO3RoaXMgZmlsZSYjNDE7LiBUaGUgc291cmNlIG9mIHRydXRoIGZvciA8ZW0+Y29kZTwvZW0+LjwvcD4KPC9saT4KPGxpPjxwPjxzdHJvbmc+PGNvZGU+MDNfbGF6eV9hbmRfY2FjaGUuamwucGx1dG8tY2FjaGUudG9tbDwvY29kZT48L3N0cm9uZz4g4oCUIGEgcGxhaW4tVE9NTCBzaWRlY2FyIGhvbGRpbmcgZXZlcnkgY2VsbCYjMzk7cyA8ZW0+b3V0cHV0PC9lbT4gcGx1cyBhIGNvbnRlbnQtYWRkcmVzc2VkIDxzdHJvbmc+ZXhlY3V0aW9uIGtleTwvc3Ryb25nPi4gRGVsZXRlIGl0IGFueSB0aW1lOyBpdCYjMzk7cyBqdXN0IGEgY2FjaGUuPC9wPgo8L2xpPgo8L29sPgo8cD5UaGUgcGlwZWxpbmUgYmVsb3cgaGFzIGRlbGliZXJhdGVseSA8c3Ryb25nPnNsb3c8L3N0cm9uZz4gY2VsbHMsIHNvICZxdW90O3J1biBvbmx5IHdoYXQmIzM5O3Mgc3RhbGUmcXVvdDsgYWN0dWFsbHkgc2F2ZXMgeW91IHNvbWV0aGluZy4gVHJ5IHRoZSBleHBlcmltZW50cyBhdCB0aGUgYm90dG9tLiDwn5GHPC9wPgo8L2Rpdj6wcGVyc2lzdF9qc19zdGF0ZcKkbWltZal0ZXh0L2h0bWyybGFzdF9ydW5fdGltZXN0YW1wy0Hai2+pgnrZt2hhc19wbHV0b19ob29rX2ZlYXR1cmVzwqxyb290YXNzaWduZWXA"
+result_hash = "53b798f2791dba59"
+runtime_ns = 3632792
+text_representation = """<div class=\"markdown\"><h1 id=\"🟡-Lazy-mode:-the-two-file-reactive-model\">🟡 Lazy mode: the two-file reactive model</h1>\n<p>PlutoLand&#39;s default is <strong>lazy</strong>. Editing a cell — in the browser <em>or</em> on disk — marks it &#40;and everything downstream&#41; <strong>stale</strong> instead of running it. <em>You</em> decide when to run, and a run executes exactly the stale closure and nothing more.</p>\n<p>Two files hold the whole story:</p>\n<ol>\n<li><p><strong><code>03_lazy_and_cache.jl</code></strong> — the notebook &#40;this file&#41;. The source of truth for <em>code</em>.</p>\n</li>\n<li><p><strong><code>03_lazy_and_cache.jl.pluto-cache.toml</code></strong> — a plain-TOML sidecar holding every cell&#39;s <em>output</em> plus a content-addressed <strong>execution key</strong>. Delete it any time; it&#39;s just a cache.</p>\n</li>\n</ol>\n<p>The pipeline below has deliberately <strong>slow</strong> cells, so &quot;run only what&#39;s stale&quot; actually saves you something. Try the experiments at the bottom. 👇</p>\n</div>"""
+
+[cells.c0000002-0000-4000-8000-000000000002]
+errored = false
+execution_key = "7b662c2b17eafc1d"
+mime = "text/html"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R52UQ8ZGl2IGNsYXNzPSJtYXJrZG93biI+PGgzIGlkPSJUaGUtcGlwZWxpbmUiPlRoZSBwaXBlbGluZTwvaDM+CjwvZGl2PrBwZXJzaXN0X2pzX3N0YXRlwqRtaW1lqXRleHQvaHRtbLJsYXN0X3J1bl90aW1lc3RhbXDLQdqLb6mD88+3aGFzX3BsdXRvX2hvb2tfZmVhdHVyZXPCrHJvb3Rhc3NpZ25lZcA="
+result_hash = "481f7a65bedca2fa"
+runtime_ns = 187834
+text_representation = """<div class=\"markdown\"><h3 id=\"The-pipeline\">The pipeline</h3>\n</div>"""
+
+[cells.c0000003-0000-4000-8000-000000000003]
+errored = false
+execution_key = "1faad1d8f9782e3b"
+mime = "text/plain"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R5pDEwMDCwcGVyc2lzdF9qc19zdGF0ZcKkbWltZap0ZXh0L3BsYWlusmxhc3RfcnVuX3RpbWVzdGFtcMtB2otvqYlS27doYXNfcGx1dG9faG9va19mZWF0dXJlc8Kscm9vdGFzc2lnbmVlq3NhbXBsZV9zaXpl"
+result_hash = "d64d7b06b2c7ef9a"
+runtime_ns = 9375
+text_representation = "1000"
+
+[cells.c0000004-0000-4000-8000-000000000004]
+errored = false
+execution_key = "f5fc7dd5a2ee4d8e"
+mime = "application/vnd.pluto.tree+object"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R5haZwcmVmaXinRmxvYXQ2NKhlbGVtZW50c9wAH5IBkqgwLjI3MDY3Nap0ZXh0L3BsYWlukgKSqDAuNTA1NjgxqnRleHQvcGxhaW6SA5KoMC42Nzc5NzWqdGV4dC9wbGFpbpIEkqgwLjc3NTY0Oap0ZXh0L3BsYWlukgWSqDAuODA0NzQ0qnRleHQvcGxhaW6SBpKoMC43ODc2NjKqdGV4dC9wbGFpbpIHkqgwLjQwNzU4Map0ZXh0L3BsYWlukgiSqDAuNDAwMjMyqnRleHQvcGxhaW6SCZKoMC40NDUwNTaqdGV4dC9wbGFpbpIKkqgwLjU1NzkwNqp0ZXh0L3BsYWlukguSqDAuNzM3MDc0qnRleHQvcGxhaW6SDJKoMC45NjM2MzeqdGV4dC9wbGFpbpINkqcxLjIwNjAxqnRleHQvcGxhaW6SDpKmMS4wNzc2qnRleHQvcGxhaW6SD5KnMS4yNDU3M6p0ZXh0L3BsYWlukhCSpzEuMzM5NTWqdGV4dC9wbGFpbpIRkqcxLjM1NTEzqnRleHQvcGxhaW6SEpKnMS4zMDYzNap0ZXh0L3BsYWlukhOSpzEuMjIxNDmqdGV4dC9wbGFpbpIUkqcxLjEzNjI3qnRleHQvcGxhaW6kbW9yZZLNA9+SqDAuNzEwMDMxqnRleHQvcGxhaW6SzQPgkqgwLjkzMDIzNap0ZXh0L3BsYWluks0D4ZKnMS4xNzI0NKp0ZXh0L3BsYWluks0D4pKnMS4wNTAzMqp0ZXh0L3BsYWluks0D45KnMS4yMjk4Nap0ZXh0L3BsYWluks0D5JKnMS4zMzc2Mqp0ZXh0L3BsYWluks0D5ZKnMS4zNjY1Mqp0ZXh0L3BsYWluks0D5pKnMS4zMjc0Map0ZXh0L3BsYWluks0D55KnMS4yNDY0M6p0ZXh0L3BsYWluks0D6JKnMS4xNTg2Map0ZXh0L3BsYWlupHR5cGWlQXJyYXmscHJlZml4X3Nob3J0oKhvYmplY3RpZLA5ZWJhNDM1OGYxODYyZWI3sHBlcnNpc3RfanNfc3RhdGXCpG1pbWXZIWFwcGxpY2F0aW9uL3ZuZC5wbHV0by50cmVlK29iamVjdLJsYXN0X3J1bl90aW1lc3RhbXDLQdqLb6pl5TK3aGFzX3BsdXRvX2hvb2tfZmVhdHVyZXPCrHJvb3Rhc3NpZ25lZadzYW1wbGVz"
+result_hash = "a4312f5822ea102c"
+runtime_ns = 3002376958
+text_representation = """1000-element Vector{Float64}:\n 0.270674899922659\n 0.5056812789139282\n 0.6779749261435775\n 0.7756493613022304\n 0.8047442912737908\n 0.7876621257612904\n 0.407580863604437\n 0.4002318746442502\n 0.44505624891814477\n 0.5579055113490918\n 0.7370743602117227\n 0.9636372634972667\n 1.2060069812342413\n ⋮\n 0.44125506107000423\n 0.5416717525613388\n 0.7100314190088983\n 0.9302345132570347\n 1.1724432622601237\n 1.0503170061128224\n 1.2298462657591724\n 1.337623026429688\n 1.3665227166849667\n 1.3274070269338933\n 1.2464309036544274\n 1.158613260275801"""
+
+[cells.c0000005-0000-4000-8000-000000000005]
+errored = false
+execution_key = "7b68da8f082d3ff8"
+mime = "application/vnd.pluto.tree+object"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R5haZwcmVmaXinRmxvYXQ2NKhlbGVtZW50c9wAH5IBkqgwLjI3MDY3Nap0ZXh0L3BsYWlukgKSqDAuMzg4MTc4qnRleHQvcGxhaW6SA5KoMC40ODQ3NzeqdGV4dC9wbGFpbpIEkqgwLjU1NzQ5Nap0ZXh0L3BsYWlukgWSqDAuNjA2OTQ1qnRleHQvcGxhaW6SBpKoMC43MTAzNDKqdGV4dC9wbGFpbpIHkqgwLjY5MDcyMqp0ZXh0L3BsYWlukgiSqDAuNjM1MTc0qnRleHQvcGxhaW6SCZKoMC41NjkwNTWqdGV4dC9wbGFpbpIKkqgwLjUxOTY4N6p0ZXh0L3BsYWlukguSpzAuNTA5NTeqdGV4dC9wbGFpbpIMkqgwLjYyMDc4Map0ZXh0L3BsYWlukg2SqDAuNzgxOTM2qnRleHQvcGxhaW6SDpKoMC45MDg0NDWqdGV4dC9wbGFpbpIPkqcxLjA0NjAxqnRleHQvcGxhaW6SEJKnMS4xNjY1Map0ZXh0L3BsYWlukhGSpjEuMjQ0OKp0ZXh0L3BsYWlukhKSpzEuMjY0ODeqdGV4dC9wbGFpbpITkqcxLjI5MzY1qnRleHQvcGxhaW6SFJKnMS4yNzE3Nqp0ZXh0L3BsYWlupG1vcmWSzQPfkqgwLjUwNDI2M6p0ZXh0L3BsYWluks0D4JKoMC42MDYwOTSqdGV4dC9wbGFpbpLNA+GSqDAuNzU5MTI3qnRleHQvcGxhaW6SzQPikqcwLjg4MDk0qnRleHQvcGxhaW6SzQPjkqcxLjAxODU3qnRleHQvcGxhaW6SzQPkkqcxLjE0NDA5qnRleHQvcGxhaW6SzQPlkqcxLjIzMTM1qnRleHQvcGxhaW6SzQPmkqcxLjI2MjM0qnRleHQvcGxhaW6SzQPnkqcxLjMwMTU3qnRleHQvcGxhaW6SzQPokqcxLjI4NzMyqnRleHQvcGxhaW6kdHlwZaVBcnJheaxwcmVmaXhfc2hvcnSgqG9iamVjdGlksGUwYTNhZjhmNDJlZTEwYzCwcGVyc2lzdF9qc19zdGF0ZcKkbWltZdkhYXBwbGljYXRpb24vdm5kLnBsdXRvLnRyZWUrb2JqZWN0smxhc3RfcnVuX3RpbWVzdGFtcMtB2otvqul3FLdoYXNfcGx1dG9faG9va19mZWF0dXJlc8Kscm9vdGFzc2lnbmVlqHNtb290aGVk"
+result_hash = "77130092d37668f3"
+runtime_ns = 2003149583
+text_representation = """1000-element Vector{Float64}:\n 0.270674899922659\n 0.38817808941829357\n 0.4847770349933882\n 0.5574951165705988\n 0.6069449515112372\n 0.7103423966789635\n 0.6907223136170652\n 0.6351737033171998\n 0.5690550808403827\n 0.5196873248554429\n 0.5095697717455293\n 0.6207810517240953\n 0.7819360730420934\n ⋮\n 0.5767490799169092\n 0.5225583323530577\n 0.5042630771393576\n 0.6060939701507679\n 0.75912720163148\n 0.8809395906400436\n 1.0185744932796104\n 1.1440928147637681\n 1.2313504554493548\n 1.2623432083841086\n 1.3015659878924297\n 1.287319386795755"""
+
+[cells.c0000006-0000-4000-8000-000000000006]
+errored = false
+execution_key = "eb23999266ef9995"
+mime = "application/vnd.pluto.tree+object"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R5g6hlbGVtZW50c5SSoW6SpDEwMDCqdGV4dC9wbGFpbpKkcGVha5KlMS40MDSqdGV4dC9wbGFpbpKmdHJvdWdokqYtMS4xMTSqdGV4dC9wbGFpbpKkbWVhbpKlMC4xNjKqdGV4dC9wbGFpbqR0eXBlqk5hbWVkVHVwbGWob2JqZWN0aWSwMWY2NWY1NDA2ZjJmOTQ0Y7BwZXJzaXN0X2pzX3N0YXRlwqRtaW1l2SFhcHBsaWNhdGlvbi92bmQucGx1dG8udHJlZStvYmplY3SybGFzdF9ydW5fdGltZXN0YW1wy0Hai2+q9g93t2hhc19wbHV0b19ob29rX2ZlYXR1cmVzwqxyb290YXNzaWduZWWlc3RhdHM="
+result_hash = "137cef32070b76"
+runtime_ns = 36750
+text_representation = "(n = 1000, peak = 1.404, trough = -1.114, mean = 0.162)"
+
+[cells.c0000007-0000-4000-8000-000000000007]
+errored = false
+execution_key = "e1bc703020ebb888"
+mime = "text/plain"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R52TQi8J+OsiBmcmVzaCBldmVyeSBydW4g4oCUIHJvbGwgNDA5MCBhdCB0PTE3ODEzODI4MjgisHBlcnNpc3RfanNfc3RhdGXCpG1pbWWqdGV4dC9wbGFpbrJsYXN0X3J1bl90aW1lc3RhbXDLQdqLb6r93fC3aGFzX3BsdXRvX2hvb2tfZmVhdHVyZXPCrHJvb3Rhc3NpZ25lZalydW5fdG9rZW4="
+result_hash = "c1cb29a63ed1781d"
+runtime_ns = 2561084
+text_representation = "\"🎲 fresh every run — roll 4090 at t=1781382828\""
+
+[cells.c0000008-0000-4000-8000-000000000008]
+errored = false
+execution_key = "15b675962306df6a"
+mime = "text/plain"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R52Toi8J+TiiBuPTEwMDAgwrcgcGVhaz0xLjQwNCDCtyB0cm91Z2g9LTEuMTE0IMK3IG1lYW49MC4xNjIisHBlcnNpc3RfanNfc3RhdGXCpG1pbWWqdGV4dC9wbGFpbrJsYXN0X3J1bl90aW1lc3RhbXDLQdqLb6sATcK3aGFzX3BsdXRvX2hvb2tfZmVhdHVyZXPCrHJvb3Rhc3NpZ25lZaZyZXBvcnQ="
+result_hash = "c3d211a7c290d661"
+runtime_ns = 31124
+text_representation = "\"📊 n=1000 · peak=1.404 · trough=-1.114 · mean=0.162\""
+
+[cells.c0000009-0000-4000-8000-000000000009]
+errored = false
+execution_key = "eae2b819902c61c5"
+mime = "text/html"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R52Zg8ZGl2IGNsYXNzPSJtYXJrZG93biI+PGJsb2NrcXVvdGU+CjxwPjxzdHJvbmc+8J+TiiBuJiM2MTsxMDAwIMK3IHBlYWsmIzYxOzEuNDA0IMK3IHRyb3VnaCYjNjE7LTEuMTE0IMK3IG1lYW4mIzYxOzAuMTYyPC9zdHJvbmc+PC9wPgo8L2Jsb2NrcXVvdGU+CjwvZGl2PrBwZXJzaXN0X2pzX3N0YXRlwqRtaW1lqXRleHQvaHRtbLJsYXN0X3J1bl90aW1lc3RhbXDLQdqLb6sFOcW3aGFzX3BsdXRvX2hvb2tfZmVhdHVyZXPCrHJvb3Rhc3NpZ25lZcA="
+result_hash = "132723b12de7fc41"
+runtime_ns = 1472209
+text_representation = """<div class=\"markdown\"><blockquote>\n<p><strong>📊 n&#61;1000 · peak&#61;1.404 · trough&#61;-1.114 · mean&#61;0.162</strong></p>\n</blockquote>\n</div>"""
+
+[cells.c000000a-0000-4000-8000-00000000000a]
+errored = false
+execution_key = "8ab703ebd9a07a0c"
+mime = "text/html"
+output_packed = "grFwdWJsaXNoZWRfb2JqZWN0c4Cmb3V0cHV0hqRib2R52gYOPGRpdiBjbGFzcz0ibWFya2Rvd24iPjxoMyBpZD0iVHJ5LWl0LSYjNDA7Z3JlYXQtZm9yLXRoZS1yZWNvcmRpbmcmIzQxOyI+VHJ5IGl0ICYjNDA7Z3JlYXQgZm9yIHRoZSByZWNvcmRpbmcmIzQxOzwvaDM+CjxwPjxzdHJvbmc+MSDCtyBSdW4td2hhdCYjMzk7cy1zdGFsZS48L3N0cm9uZz4gRXZlcnl0aGluZyBpcyBzdGFsZSBvbiBmaXJzdCBvcGVuLiBDbGljayB0aGUgPGVtPiZxdW90O04gY2VsbHMgYXJlIHN0YWxlIOKAlCBydW4mcXVvdDs8L2VtPiBub3RpY2UsIG9yIGhpdCA8Y29kZT5DdHJsL0NtZCYjNDM7UzwvY29kZT4uIFdhdGNoIHRoZSBjaGFpbiBnbyBhbWJlciDihpIgcnVubmluZyDihpIgZ3JlZW4uIH41IHMuPC9wPgo8cD48c3Ryb25nPjIgwrcgRWRpdCBhIGxlYWYsIGtlZXAgdGhlIGV4cGVuc2l2ZSB3b3JrLjwvc3Ryb25nPiBDaGFuZ2UgdGhlIHRleHQgaW5zaWRlIDxjb2RlPnJlcG9ydDwvY29kZT4gJiM0MDtlLmcuIGFkZCBhbiBlbW9qaSYjNDE7LiBPbmx5IDxjb2RlPnJlcG9ydDwvY29kZT4gYW5kIHRoZSBjZWxsIHVuZGVyIGl0IGdvIHN0YWxlIOKAlCA8Y29kZT5zYW1wbGVzPC9jb2RlPiBhbmQgPGNvZGU+c21vb3RoZWQ8L2NvZGU+IHN0YXkgZ3JlZW4uIFJ1biBpdDogaW5zdGFudC4gPGVtPlRoYXQmIzM5O3MgdGhlIHBvaW50LjwvZW0+PC9wPgo8cD48c3Ryb25nPjMgwrcgUmV2ZXJ0IHVuLXN0YWxlcyBmb3IgZnJlZS48L3N0cm9uZz4gQ2hhbmdlIDxjb2RlPnNhbXBsZV9zaXplPC9jb2RlPiB0byA8Y29kZT4yXzAwMDwvY29kZT4uIFRoZSB3aG9sZSBjaGFpbiBnb2VzIHN0YWxlLiBOb3cgY2hhbmdlIGl0IDxzdHJvbmc+YmFjazwvc3Ryb25nPiB0byA8Y29kZT4xXzAwMDwvY29kZT4g4oCUIHRoZSBzdGFsZSBtYXJrcyB2YW5pc2ggd2l0aCA8c3Ryb25nPm5vIHJ1bjwvc3Ryb25nPiwgYmVjYXVzZSB0aGUgZXhlY3V0aW9uIGtleXMgcHJvdmUgbm90aGluZyBhY3R1YWxseSBjaGFuZ2VkLjwvcD4KPHA+PHN0cm9uZz40IMK3IE91dHB1dHMgc3Vydml2ZSBhIHJlc3RhcnQuPC9zdHJvbmc+IEFmdGVyIHJ1bm5pbmcsIHN0b3AgdGhlIHNlcnZlciBhbmQgcmVvcGVuIHRoaXMgbm90ZWJvb2suIEV2ZXJ5IG91dHB1dCBpcyByZXN0b3JlZCBpbnN0YW50bHkgZnJvbSB0aGUgc2lkZWNhciDigJQgPGVtPmV4Y2VwdDwvZW0+IDxjb2RlPnJ1bl90b2tlbjwvY29kZT4sIHdoaWNoIGlzIDxjb2RlPmFsd2F5c19zdGFsZTwvY29kZT4gYW5kIGNvbWVzIGJhY2sgbWFya2VkIHN0YWxlLjwvcD4KPHA+PHN0cm9uZz41IMK3IEVkaXQgZnJvbSBvdXRzaWRlLjwvc3Ryb25nPiBXaXRoIHRoZSBub3RlYm9vayBvcGVuLCBlZGl0IHRoaXMgPGNvZGU+LmpsPC9jb2RlPiBmaWxlIGluIGFub3RoZXIgZWRpdG9yICYjNDA7b3IgbGV0IGFuIGFnZW50IGRvIGl0JiM0MTsuIFRoZSBtYXRjaGluZyBjZWxsIHR1cm5zIGFtYmVyIGluIHlvdXIgYnJvd3NlciB3aXRoaW4gYSBzZWNvbmQg4oCUIGFuZCBub3RoaW5nIHJ1bnMgdW50aWwgeW91IHNheSBzby4gU2VlIDxjb2RlPjA0X2FnZW50X2NvbGxhYi5qbDwvY29kZT4uPC9wPgo8L2Rpdj6wcGVyc2lzdF9qc19zdGF0ZcKkbWltZal0ZXh0L2h0bWyybGFzdF9ydW5fdGltZXN0YW1wy0Hai2+rBXr6t2hhc19wbHV0b19ob29rX2ZlYXR1cmVzwqxyb290YXNzaWduZWXA"
+result_hash = "4168449d77251999"
+runtime_ns = 640208
+text_representation = """<div class=\"markdown\"><h3 id=\"Try-it-&#40;great-for-the-recording&#41;\">Try it &#40;great for the recording&#41;</h3>\n<p><strong>1 · Run-what&#39;s-stale.</strong> Everything is stale on first open. Click the <em>&quot;N cells are stale — run&quot;</em> notice, or hit <code>Ctrl/Cmd&#43;S</code>. Watch the chain go amber → running → green. ~5 s.</p>\n<p><strong>2 · Edit a leaf, keep the expensive work.</strong> Change the text inside <code>report</code> &#40;e.g. add an emoji&#41;. Only <code>report</code> and the cell under it go stale — <code>samples</code> and <code>smoothed</code> stay green. Run it: instant. <em>That&#39;s the point.</em></p>\n<p><strong>3 · Revert un-stales for free.</strong> Change <code>sample_size</code> to <code>2_000</code>. The whole chain goes stale. Now change it <strong>back</strong> to <code>1_000</code> — the stale marks vanish with <strong>no run</strong>, because the execution keys prove nothing actually changed.</p>\n<p><strong>4 · Outputs survive a restart.</strong> After running, stop the server and reopen this notebook. Every output is restored instantly from the sidecar — <em>except</em> <code>run_token</code>, which is <code>always_stale</code> and comes back marked stale.</p>\n<p><strong>5 · Edit from outside.</strong> With the notebook open, edit this <code>.jl</code> file in another editor &#40;or let an agent do it&#41;. The matching cell turns amber in your browser within a second — and nothing runs until you say so. See <code>04_agent_collab.jl</code>.</p>\n</div>"""

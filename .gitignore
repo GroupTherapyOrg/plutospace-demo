@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# In a REAL project you would ignore the output-cache sidecars:
+#   *.pluto-cache.toml
+# Here we deliberately COMMIT them — this is a demo workspace, and a freshly-cloned copy
+# should already show restored outputs (and the always_stale cell coming back stale) on the
+# very first open. That is the restart-survival feature, captured in a screenshot.
