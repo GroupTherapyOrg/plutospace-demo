@@ -28,7 +28,7 @@ Lazy/collab mode is the default. Add `--autorun` for classic Pluto reactivity.
 plutoland-demo/
 ├── notebooks/
 │   ├── 01_welcome.jl          overview + classic reactivity (stdlib, instant)
-│   ├── 02_plots.jl            WasmMakie figures + a PlutoUI slider (uses env/)
+│   ├── 02_plots.jl            WasmMakie figures + a PlutoUI slider (self-contained env)
 │   ├── 03_lazy_and_cache.jl   the two-file lazy model: stale marks, sidecar, restart-survival
 │   └── 04_agent_collab.jl     human + agent on one live session (pluto-collab)
 ├── data/
@@ -38,7 +38,6 @@ plutoland-demo/
 │   └── sketch.jl              a plain Julia script (no cells) — opens as a tab
 ├── docs/
 │   └── architecture.md        nested doc (shows tree depth)
-├── env/                       shared package env for 02_plots.jl (PlutoUI + WasmMakie)
 ├── AGENTS.md / CLAUDE.md      the collab stanza agents follow
 └── SCREENSHOTS.md             the guided shot list — read this before recording
 ```
@@ -51,5 +50,11 @@ terminal commands for each shot. Start there.
 ## Packages
 
 Everything except `02_plots.jl` is **pure stdlib** — zero installs, runs instantly, fully
-offline. `02_plots.jl` activates `env/` (PlutoUI + WasmMakie), already resolved against your
-local depot. Nothing here phones home.
+offline. `02_plots.jl` carries its **own embedded environment** (PlutoUI + WasmMakie, with
+WasmMakie pinned by git commit via `[sources]`) — Pluto's package manager instantiates it from
+your local depot on first open. No `Pkg.activate`, no separate env folder, nothing phones home.
+
+> First open of `02_plots.jl` makes Pluto instantiate that environment and the worker load the
+> packages — give it a few seconds the first time. **Don't precompile this env in a terminal
+> while the notebook is loading** (two processes compiling the same packages will error each
+> other out); just let the notebook do it once.

@@ -103,15 +103,20 @@ appearing in the tree.
 
 **Proves:** rich, interactive output (and Pluto's package handling) inside the Land.
 
-**Setup:** open `notebooks/02_plots.jl` and run it (`Cmd/Ctrl+S`). First run compiles
-WasmMakie — give it a moment.
+**Setup:** open `notebooks/02_plots.jl`. The committed cache restores all figures instantly, so
+it looks complete on open. To capture *live* rendering, run it (`Cmd/Ctrl+S`) — the first run
+instantiates the notebook's embedded environment and loads WasmMakie, so give it a few seconds
+(the slider cell may flash an error during the package load, then settle green — that's Pluto
+moving the workspace as each package loads).
 
 **Capture:**
 - the gallery: the **line**, **scatter**, and **heatmap** figures.
 - drag the **PlutoUI slider** (`frequency`) and capture the figure redrawing — best as a clip.
 
-> Note: this notebook activates the shared `env/` (PlutoUI + WasmMakie) instead of Pluto's
-> per-notebook environment. Mention that in the recording if you're showing package handling.
+> Note: this notebook carries its **own embedded environment** (PlutoUI + WasmMakie pinned by
+> git commit via `[sources]`), managed by Pluto's package manager — no `Pkg.activate`, no separate
+> folder. Don't run `julia`/`precompile` on these packages in the terminal while the notebook is
+> loading — two processes compiling the same env will error each other out.
 
 ---
 
