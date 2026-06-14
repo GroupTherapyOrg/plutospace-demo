@@ -6,7 +6,7 @@ using InteractiveUtils
 
 # ╔═╡ a0000001-0000-4000-8000-000000000001
 md"""
-# 🟢🟣🔴 Welcome to PlutoLand
+# 🟢🟣🔴 Welcome to PlutoSpace
 
 ### A workspace for Pluto notebooks — built for humans and agents, *together.*
 
@@ -16,7 +16,7 @@ And anything that can edit a file — *you*, or a coding agent in any terminal �
 this same live session.
 
 This is the unmodified [Pluto.jl](https://github.com/fonsp/Pluto.jl) editor. Everything you
-know about Pluto still holds. PlutoLand adds the *land around* the notebooks.
+know about Pluto still holds. PlutoSpace adds the *land around* the notebooks.
 """
 
 # ╔═╡ a0000002-0000-4000-8000-000000000002

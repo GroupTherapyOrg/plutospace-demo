@@ -8,7 +8,7 @@ using InteractiveUtils
 md"""
 # 🟡 Lazy mode: the two-file reactive model
 
-PlutoLand's default is **lazy**. Editing a cell — in the browser *or* on disk — marks it (and
+PlutoSpace's default is **lazy**. Editing a cell — in the browser *or* on disk — marks it (and
 everything downstream) **stale** instead of running it. *You* decide when to run, and a run
 executes exactly the stale closure and nothing more.
 
@@ -55,7 +55,7 @@ stats = (
 # ╔═╡ c0000007-0000-4000-8000-000000000007
 # ╠═╡ always_stale = true
 # 🎲 IMPURE & STANDALONE: uses rand() and the clock, so its result can't be reproduced — and
-# nothing depends on it. The metadata line above (always_stale = true) tells PlutoLand to NEVER
+# nothing depends on it. The metadata line above (always_stale = true) tells PlutoSpace to NEVER
 # trust a cached value here: it comes back stale after every restart, even though the code
 # never changed, while the rest of the pipeline restores green.
 run_token = "🎲 fresh every run — roll $(rand(1:9999)) at t=$(round(Int, time()))"

@@ -1,8 +1,8 @@
-# 📸 PlutoLand guided shot list
+# 📸 PlutoSpace guided shot list
 
-Every screenshot/clip needed for the PlutoLand README, in recording order. Each entry says
+Every screenshot/clip needed for the PlutoSpace README, in recording order. Each entry says
 **what it proves**, **how to set it up**, and **what to capture**. Features marked
-*(unique to PlutoLand)* are the ones Pluto.jl doesn't have — those are the point.
+*(unique to PlutoSpace)* are the ones Pluto.jl doesn't have — those are the point.
 
 ---
 
@@ -10,10 +10,10 @@ Every screenshot/clip needed for the PlutoLand README, in recording order. Each 
 
 ```sh
 # the demo workspace
-DEMO=~/Documents/dev/GroupTherapyOrg/plutoland-demo
+DEMO=~/Documents/dev/GroupTherapyOrg/plutospace-demo
 
-# the collab CLI ships in the PlutoLand checkout — put it on PATH for the agent shots
-export PATH="$HOME/Documents/dev/GroupTherapyOrg/PlutoLand.jl/bin:$PATH"
+# the collab CLI ships in the PlutoSpace checkout — put it on PATH for the agent shots
+export PATH="$HOME/Documents/dev/GroupTherapyOrg/PlutoSpace.jl/bin:$PATH"
 ```
 
 - **Window:** size the browser to a clean 16:9 (e.g. 1600×900) and keep it fixed across every
@@ -28,15 +28,15 @@ export PATH="$HOME/Documents/dev/GroupTherapyOrg/PlutoLand.jl/bin:$PATH"
 
 ## 1 · The workspace opener  *(unique)*
 
-**Proves:** PlutoLand starts at a VS Code-style "Open Folder" hub, not a notebook.
+**Proves:** PlutoSpace starts at a VS Code-style "Open Folder" hub, not a notebook.
 
 **Setup:** launch with **no** folder:
 ```sh
-plutoland
+plutospace
 ```
 
 **Capture:**
-- the opener page — the PlutoLand wordmark, **recent workspaces**, and the folder browser.
+- the opener page — the PlutoSpace wordmark, **recent workspaces**, and the folder browser.
 - click into a couple of folders to show the breadcrumb + folder grid (the "browse the
   server's filesystem" picker).
 - the **paste-a-path** field.
@@ -49,7 +49,7 @@ plutoland
 
 **Setup:**
 ```sh
-plutoland "$DEMO"
+plutospace "$DEMO"
 ```
 Expand `notebooks/`, `data/`, `docs/` in the sidebar. Open `notebooks/01_welcome.jl`.
 
@@ -122,7 +122,7 @@ moving the workspace as each package loads).
 
 ## 7 · Lazy mode: edits mark cells stale, you run what changed  *(unique — the core)*
 
-**Proves:** PlutoLand's default isn't autorun. Edits make cells **stale**; you run exactly the
+**Proves:** PlutoSpace's default isn't autorun. Edits make cells **stale**; you run exactly the
 stale closure. This is what the slow cells in `03_lazy_and_cache.jl` are for.
 
 **Setup:** reset caches (`rm -f "$DEMO"/notebooks/*.pluto-cache.toml`), then open
@@ -161,7 +161,7 @@ are machine-readable; any tool can read results without running anything."*
 **Setup & capture:**
 1. run `03_lazy_and_cache.jl` fully (all green).
 2. **stop the server** (`Ctrl+C` in the launching terminal) and relaunch
-   `plutoland "$DEMO"`; reopen the notebook.
+   `plutospace "$DEMO"`; reopen the notebook.
 3. Capture: outputs are **all present immediately** — the chart, the stats, the report — with
    nothing recomputed. The only cell that comes back **stale** is `run_token` (see §10).
 
@@ -228,7 +228,7 @@ over an SSH tunnel, point-and-click (the VS Code Remote-SSH model).
 **Prerequisite:** a host in `~/.ssh/config` reachable with **keyed** auth (`BatchMode=yes`; no
 password prompt). The remote needs `git` and `julia` available via a login shell.
 
-**Setup & capture:** launch `plutoland` with **no** folder (the opener, §1). If you have SSH
+**Setup & capture:** launch `plutospace` with **no** folder (the opener, §1). If you have SSH
 hosts, an **"SSH Remotes"** section lists them as pills.
 1. Click a host. Capture the progress banner: *"Connecting to `<host>` — connecting /
    checking / installing / starting / tunneling / ready"*, including the first-time note
@@ -236,7 +236,7 @@ hosts, an **"SSH Remotes"** section lists them as pills.
 2. When it flips to **ready**, capture the opened remote workspace — then open a notebook and a
    terminal **on the remote** to show it's the full Land, not a thin client.
 
-> First contact clones + instantiates PlutoLand on the remote (minutes); reconnects after that
+> First contact clones + instantiates PlutoSpace on the remote (minutes); reconnects after that
 > are instant. If you don't have a remote handy, capture just the opener's SSH Remotes section
 > and the progress banner.
 
@@ -244,7 +244,7 @@ hosts, an **"SSH Remotes"** section lists them as pills.
 
 ## 13 · Branding & polish
 
-**Capture:** the PlutoLand **wordmark** in the sidebar header, the **favicon** in the browser
+**Capture:** the PlutoSpace **wordmark** in the sidebar header, the **favicon** in the browser
 tab, and Pluto's **Safe-preview** intro on first opening a notebook. Small, but they make the
 README feel finished.
 

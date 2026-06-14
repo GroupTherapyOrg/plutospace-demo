@@ -1,23 +1,23 @@
-# PlutoLand demo workspace 🟢🟣🔴
+# PlutoSpace demo workspace 🟢🟣🔴
 
 A self-contained, **local-only** folder built to show off every feature that's *unique to*
-[PlutoLand.jl](https://github.com/GroupTherapyOrg/PlutoLand.jl) — the workspace, the tabs, the
+[PlutoSpace.jl](https://github.com/GroupTherapyOrg/PlutoSpace.jl) — the workspace, the tabs, the
 terminal, SSH remotes, and the lazy human+agent reactive model. Open it, screenshot it, record
 it.
 
 ## Launch
 
-From the PlutoLand.jl checkout (so `plutoland` / `PlutoLand.run` is available):
+From the PlutoSpace.jl checkout (so `plutospace` / `PlutoSpace.run` is available):
 
 ```sh
-plutoland ~/Documents/dev/GroupTherapyOrg/plutoland-demo
+plutospace ~/Documents/dev/GroupTherapyOrg/plutospace-demo
 ```
 
 or, as a package:
 
 ```julia
-import PlutoLand
-PlutoLand.run(workspace="/Users/daleblack/Documents/dev/GroupTherapyOrg/plutoland-demo")
+import PlutoSpace
+PlutoSpace.run(workspace="/Users/daleblack/Documents/dev/GroupTherapyOrg/plutospace-demo")
 ```
 
 Lazy/collab mode is the default. Add `--autorun` for classic Pluto reactivity.
@@ -25,7 +25,7 @@ Lazy/collab mode is the default. Add `--autorun` for classic Pluto reactivity.
 ## What's in here
 
 ```
-plutoland-demo/
+plutospace-demo/
 ├── notebooks/
 │   ├── 01_welcome.jl          overview + classic reactivity (stdlib, instant)
 │   ├── 02_plots.jl            WasmMakie figures + a PlutoUI slider (self-contained env)

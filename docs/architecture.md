@@ -7,7 +7,7 @@ folders in the sidebar to reach it.
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  PlutoLand shell  — the "land"                                │
+│  PlutoSpace shell  — the "land"                                │
 │  • folder workspace + file tree                               │
 │  • notebooks & plain files as tabs                            │
 │  • integrated terminal (persistent PTY)                       │

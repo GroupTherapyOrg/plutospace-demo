@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This folder is a **PlutoLand workspace**. A human may have it open in a browser right now,
+This folder is a **PlutoSpace workspace**. A human may have it open in a browser right now,
 with notebooks running in a live lazy-mode session. You can work in that same session using
 nothing but your normal file tools and a shell.
 
@@ -25,8 +25,8 @@ live lazy-mode Pluto server.
 - `pluto-collab` (curl + sed) finds them for you:
   `pluto-collab servers`, `pluto-collab notebooks`, `pluto-collab status`, `pluto-collab run`,
   `pluto-collab interrupt`.
-- The CLI ships with PlutoLand: `bin/pluto-collab` in the
-  [PlutoLand.jl repo](https://github.com/GroupTherapyOrg/PlutoLand.jl).
+- The CLI ships with PlutoSpace: `bin/pluto-collab` in the
+  [PlutoSpace.jl repo](https://github.com/GroupTherapyOrg/PlutoSpace.jl).
 
 ## A good first task to demo
 
