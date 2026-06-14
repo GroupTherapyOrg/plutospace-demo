@@ -19,6 +19,9 @@ end
 # ╔═╡ b0000002-0000-4000-8000-000000000002
 using WasmMakie, PlutoUI
 
+# ╔═╡ b0000010-0000-4000-8000-000000000010
+TableOfContents()
+
 # ╔═╡ b0000001-0000-4000-8000-000000000001
 md"""
 # 📈 Plots that live in the browser
@@ -88,7 +91,11 @@ PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 WasmMakie = "782397d3-b2e0-4093-86f4-3070b4a5c6bd"
 
 [sources]
-WasmMakie = {url = "https://github.com/GroupTherapyOrg/WasmMakie.jl", rev = "de6c9a45585e892ac96fa7ad9fd3b1d3d61277ec"}
+WasmMakie = {rev = "de6c9a45585e892ac96fa7ad9fd3b1d3d61277ec", url = "https://github.com/GroupTherapyOrg/WasmMakie.jl"}
+
+[compat]
+PlutoUI = "~0.7.83"
+WasmMakie = "~0.1.0"
 """
 
 # ╔═╡ 00000000-0000-0000-0000-000000000002
@@ -97,7 +104,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.12.6"
 manifest_format = "2.0"
-project_hash = "d39377f6e1d3ab032868fdd4e9fc970dabdb6ad0"
+project_hash = "528a15ccaaea2a8f2cfb8a3b8ef12bd3bc6e7ee4"
 
 [[deps.AbstractPlutoDingetjes]]
 git-tree-sha1 = "6c3913f4e9bdf6ba3c08041a446fb1332716cbc2"
@@ -329,6 +336,7 @@ version = "1.64.0+1"
 """
 
 # ╔═╡ Cell order:
+# ╠═b0000010-0000-4000-8000-000000000010
 # ╟─b0000001-0000-4000-8000-000000000001
 # ╠═b0000002-0000-4000-8000-000000000002
 # ╟─b0000003-0000-4000-8000-000000000003
